@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: #8c8c8c;
 }
 
 .container {
@@ -19,7 +20,7 @@ a {
     height: 737px;
     background-image: url(../images/slider_img_201.png);
     position: relative;
-    /*padding-top: 63px;*/
+    padding-top: 63px;
 }
 
 .paddingSite {
@@ -36,15 +37,41 @@ a {
     color: #8c8c8c;
 }
 
+
+
+.headerMenuItem:hover {
+    line-height: 48px;
+    color: #212121;
+    padding-bottom: -5px;
+    border-bottom: 3px solid #8c8c8c;
+}
+
+.headerMenuItem:last-child:hover {
+    border-bottom: none;
+}
+
+.headerMenuItem:first-child:hover {
+    border-bottom: none;
+}
+
+
 .active {
     font-family: Montserrat;
-    font-size: 14px;
+    /*font-size: 14px;*/
     line-height: 48px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #212121;
     padding-bottom: -5px;
+    border-bottom: 3px solid black;
+}
+
+.active a {
+    color: #212121;
+}
+
+.active:hover {
     border-bottom: 3px solid black;
 }
 
@@ -79,10 +106,16 @@ h1 {
     width: 212px;
     height: 45px;
     background-color: #ffffff;
-    box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
     border-radius: 22.5px;
     text-align: center;
     margin-bottom: 80px;
+    border: 1px solid floralwhite;
+}
+
+.sliderButton:hover {
+    box-shadow:8px 8px 8px 1px rgba(126,126,126,0.45);
+    -webkit-box-shadow:8px 8px 8px 1px rgba(126,126,126,0.45);
+    -moz-box-shadow:8px 8px 8px 1px rgba(126,126,126,0.45);
 }
 
 .sliderButtonA {
@@ -100,6 +133,14 @@ h1 {
     line-height: 45px;
 }
 
+
+.gtClass {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    color: #212121;
+}
+
 .pagination {
     margin: 0 40%;
     position: absolute;
@@ -115,6 +156,14 @@ h1 {
     width: 32px;
     background-color: grey;
     border-radius: 50%;
+}
+
+.paginationItem:hover {
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+    border-radius: 50%;
+    margin-bottom: 0px;
 }
 
 /*.paginationBut {
@@ -198,6 +247,7 @@ h1 {
 .productCatalogItem:last-child {
     margin-right: 0;
 } 
+
 
 .hoverProductItem {
     width: 270px;
@@ -477,6 +527,8 @@ h1 {
 
 .footerBlock {
     display: inline-block;
+    vertical-align: top;
+    position: relative;
 }
 
 .subscribe {
@@ -502,13 +554,16 @@ h1 {
 }
 
 .subscribeInput {
-    width: 349px;
+    width: 300px;
     height: 49px;
     background-color: #ffffff;
     border: 1px solid #d9dee1;
     margin-top: 26px;
-    border-right: none;
+    border-right: none; 
+    padding-left: 19px;
 }
+
+
 
 .footerImgTelegram {
     width: 46px;
@@ -519,12 +574,16 @@ h1 {
     margin-top: 26px;
     line-height: 48px;
     text-align: center;
+    bottom: 100px;
 }
 
 .inputImg {
     display: inline-block;
 }
 
+.subscribeInput:focus,.subscribeInput:active {
+    outline: none;
+}
 
 .footerLinkInput {
     position: relative;
@@ -572,10 +631,386 @@ h1 {
     margin-right: 100px;
 }
 
+
 .footerElement {
     display: inline-block;
 }
 
 .fa {
+    color: #6c6c6c;
+}
+
+.fa:hover {
+    color: #212121;
+}
+
+.footerLink:hover {
+    color: #6c6c6c;
+}
+
+
+/*!! SECOND !!*/
+
+.secondContainer {
+    width: 1366px;
+}
+
+.productTitle {
+    margin-top: 168px;
+}
+
+.productHeader {
+    background-color: #f5f5f5;
+    padding-bottom: 44px;
+    padding-top: 63px;
+}
+
+.halfActive {
+    padding-bottom: 17px;
+    border-bottom: 1px solid #6c6c6c;   
+}
+
+.interiorCatalogImg {
+    display: inline-block;
+    margin: 0 10px 25px 0;
+}
+
+.interiorCatalogImg:hover {
+    outline: 1px solid lightblue;
+}
+
+.interiorCatalog {
+    margin-top: 57px;
+}
+
+.footerLink {
+    color: #212121;
+}
+
+input:-webkit-autofill {
+    color: #ffffff !important;
+}
+
+.secondMenuItem {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px;
+    font-family: Montserrat;
+    font-weight: 300;
+    color: #8c8c8c; 
+}
+
+.secondMenuActive {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #212121;
+    padding-bottom: -5px;
+    border-bottom: 3px solid black;
+}
+
+.borderBottomItem {
+    margin-right: -10px;
+}
+
+.secondMenuItem:hover {
+    padding-bottom: 17px;
+    border-bottom: 1px solid #6c6c6c;   
+}
+
+.secondMenuActive:hover {
+    padding-bottom: 0px;
+    border-bottom: none;   
+}
+
+.loadingI {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #212121;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 71px;
+    margin-bottom: 140px;
+}
+
+
+
+/*!!! INTERIOR PRODUCT DELAIS !!!*/
+
+.productDelaisHeader {
+    margin-top: 63px;
+}
+
+.flexBodyMenu {
+    display: flex;
+    justify-content: center;
+}
+
+.productDelaisBodyMenu {
+    background-color: #f4f4f4;
+    height: 49px;
+    margin-top: 29px;
+    padding-top: 26px;
+}
+
+.productDelaisBodyMenuItem {
+    margin-left: 30px;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.productDelaisBodyMenuItemActive {
+    color: #212121;
+}
+
+.productDelaisBodyMenuItem:hover {
+    color: #212121;
+}
+
+.productDelaisBody {
+    padding-top: 72px;
+    padding-left: 98px;
+    position: relative;
+}
+
+.productDescription {
+    position: absolute;
+    right: 264px;
+    margin-top: -550px;
+}
+
+.productDescriptionTitle {
+    font-family: Montserrat;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #212121;
+}
+
+.hotDeal {
+    font-family: Montserrat;
+    font-size: 18.1px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #e53935;
+    text-align: center;
+}
+
+.prise {
+    font-family: Montserrat;
+    font-size: 36.1px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #212121;
+    margin-left: 35px;
+}
+
+.prise:last-child {
+    margin-left: 0px;
+}
+
+.priseItem {
+    font-family: Montserrat;
+    font-size: 72.1px;
+    text-transform: uppercase;
+}
+
+.priseItems {
+    display: inline-block;
+}
+
+.descriptionButton {
+    text-align: center;
+    width: 510px;
+    height: 71px;
+    background-color: #f44336;
+    box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
+    border-radius: 35px;
+    position: absolute;
+    margin-top: 31px;
+    right: -110px;
+}
+
+.relativeDiv {
+    position: relative;
+}
+
+.descriptionButtonText {
+    font-family: Montserrat;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    margin-top: 22px;
+}
+
+.arrowButton {
+    color: white;
+}
+
+.descriptionButton:hover {
+    box-shadow:4px 4px 3px 2px rgba(232,111,94,0.85);
+    -webkit-box-shadow:4px 4px 3px 2px rgba(232,111,94,0.85);
+    -moz-box-shadow:4px 4px 3px 2px rgba(232,111,94,0.85);
+}
+
+.descriptionButtonText:hover {
+    color: wheat;
+}
+
+.descriptionText {
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 141px;
+    font-size: 16.1px;
+    line-height: 24px;
+    font-weight: 300;
+    color: black;
+    width: 510px;
+    margin-left: -95px;
+}
+
+.pictureItems {
+    margin-left: 150px;
+    margin-top: 11px;
+}
+    
+.pictureItem {
+    margin-left: 10px;
+}
+
+.pictureItem:last-child {
+    margin-left: 0;
+}
+
+.pictureItem:hover {
+    outline: 1px solid aquamarine;
+}
+
+
+
+
+
+
+.relatedProducts {
+    margin-top: 245px;
+    position: relative;
+}
+
+.relatedProductsTitle {
+    font-family: Montserrat;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #212121;
+}
+
+.productDelaisExp {
+    position: absolute;
+    right: 98px;
+    margin-top: -25px;
+}
+
+.ipdFooter {
+    background-color: #f7f7f7;
+}
+
+.contactFirstBlock {
+    position: relative;
+    padding-top: 63px;
+    background-color: #f5f5f5;
+    height: 360px;
+    width: 100%;
+}
+
+.contactTitle {
+    font-family: Montserrat;
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 100;
+    color: #212121;
+    margin-top: 171px;
+}
+
+.contactBody {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.contactBodyItem {
+    outline: 1px solid #9c9c9c;
+    width: 370px;
+    height: 370px;
+}
+
+.fa-map-marker {
+    color: #212121;
+    margin-top: 43px;
+    margin-left: 166px;
+}
+
+.blackText {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #212121;
+}
+
+.greyText {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+
+.adress {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #6c6c6c;
+}
+
+.california {
+    font-family: Montserrat;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212121;
+    margin-left: 117px;
+    margin-top: 34px;
+}
+
+.contentContainer {
+    margin-left: 0px;
+    text-align: center;
+}
+
+.comm {
+    margin-top: 5px;
+}
+
+.fa-map-marker:hover {
     color: #6c6c6c;
 }
